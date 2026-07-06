@@ -21,8 +21,7 @@ A simple and responsive weather application built using HTML, CSS, and JavaScrip
 
 ## 🌐 Live Demo
 
-https://github.com/krishna12-git/Weather-app.git
-
+https://krishna12-git.github.io/Weather-app/
 ## 👨‍💻 Author
 
 Krishna Yadav
