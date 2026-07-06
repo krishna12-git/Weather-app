@@ -19,6 +19,10 @@ A simple and responsive weather application built using HTML, CSS, and JavaScrip
 - JavaScript (ES6)
 - Weather API
 
+## 🌐 Live Demo
+
+https://github.com/krishna12-git/Weather-app.git
+
 ## 👨‍💻 Author
 
 Krishna Yadav
