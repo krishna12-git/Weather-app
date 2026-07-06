@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow | Weather App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Weather Card -->
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <h1>
+                <i class="fa-solid fa-cloud-sun"></i>
+                WeatherNow
+            </h1>
+
+            <!-- Dark Mode -->
+            <button id="themeBtn" title="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <!-- Loading -->
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather...</p>
+        </div>
+
+        <!-- Error -->
+        <div id="errorBox" class="error hidden">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>City not found!</span>
+        </div>
+
+        <!-- Weather Section -->
+        <section id="weatherBox" class="weather hidden">
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon"
+            >
+
+            <h2 id="temperature">--°C</h2>
+
+            <h3 id="cityName">City Name</h3>
+
+            <p id="weatherDescription">
+                Weather Description
+            </p>
+
+            <!-- Weather Details -->
+
+            <div class="details">
+
+                <div class="detail-card">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <span>Feels Like</span>
+                    <h4 id="feelsLike">--°C</h4>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Humidity</span>
+                    <h4 id="humidity">--%</h4>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>Wind</span>
+                    <h4 id="wind">-- km/h</h4>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Pressure</span>
+                    <h4 id="pressure">----</h4>
+                </div>
+
+            </div>
+
+            <!-- Date & Time -->
+
+            <div class="date-time">
+
+                <p id="date"></p>
+
+                <p id="time"></p>
+
+            </div>
+
+        </section>
+
+        <!-- Search History -->
+
+        <section class="history">
+
+            <h3>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                Recent Searches
+            </h3>
+
+            <ul id="historyList"></ul>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
